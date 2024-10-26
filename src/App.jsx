@@ -28,12 +28,12 @@ function App() {
   return (
     <div
       style={{
-        margin: 0, // Remove any margin
-        padding: 0, // Remove any padding
-        overflowX: "hidden", // Prevent horizontal scrolling
+        margin: 0,
+        padding: 0,
+        overflowX: "hidden",
         display: "flex",
         flexDirection: "column",
-        width: "100%", // Ensure full width
+        width: "100%",
       }}
     >
       {/* Navbar */}
@@ -46,62 +46,63 @@ function App() {
           width: "100%",
           zIndex: 1000,
           backgroundColor: isScrolled
-            ? "rgba(255, 255, 255, 1)" // Solid background after scroll
-            : "rgba(255, 255, 255, 0.5)", // Transparent background at the top
+            ? "rgba(255, 255, 255, 1)"
+            : "rgba(255, 255, 255, 0.5)",
           transition: "background-color 0.3s ease, box-shadow 0.3s ease",
           boxShadow: isScrolled ? "0 4px 10px rgba(0, 0, 0, 0.1)" : "none",
-          backdropFilter: isScrolled ? "none" : "blur(10px)", // Blur effect when transparent
+          backdropFilter: isScrolled ? "none" : "blur(10px)",
         }}
       >
         <Navbar />
       </div>
 
-      {/* Heder */}
-      <div
-        style={{
-          marginTop: "60px", // Ensure header is below the fixed navbar
-          paddingBottom: 0, // Remove unnecessary padding
-        }}
-      >
+      {/* Header */}
+      <div style={{ marginTop: "60px", paddingBottom: 0 }}>
         <Heder />
       </div>
-      <dev className="carousel-container1">
+
+      <div className="carousel-container1">
         {/* Carousel */}
         <div
           style={{
-            marginTop: "", // Adjust margin to have small space between header and carousel
-            justifyContent: "center", // Center carousel if needed
-            alignItems: "center", // Center carousel vertically if needed
-            width: "100%", // Ensure full width for the carousel
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
           }}
         >
           <CustomCarousel />
         </div>
-        <div className="abaut-container">
+        <div className="about-container">
           <AboutUs />
         </div>
-        <div className="abaut-container"></div>
-        {/* About Us Section */}
-        <dev>
-          <StatsSection />
-        </dev>
 
+        {/* Stats Section */}
+        <div>
+          <StatsSection />
+        </div>
+
+        {/* Product Carousel */}
         <div className="ProductCarousel-container">
-          {" "}
           <ProductCarousel />
         </div>
+
+        {/* Sertifikasi Card */}
         <SeertiCard />
+
+        {/* Testimonials */}
         <div style={{ marginBottom: "5%", marginTop: "7%" }}>
-          {" "}
           <h1 style={{ textAlign: "center", color: "green" }}> Testimoni</h1>
           <TestimonialsCarousel />
         </div>
 
+        {/* Our Factory */}
         <OurFactory />
+
+        {/* Footer */}
         <div>
           <Footer />
         </div>
-      </dev>
+      </div>
     </div>
   );
 }
