@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./componet/navbar";
-import Heder from "./componet/Heder";
+import Heder from "./componet/heder";
 import CustomCarousel from "./componet/carosel";
 import AboutUs from "./componet/abaut";
 import StatsSection from "./componet/StatsSection.jsx";
