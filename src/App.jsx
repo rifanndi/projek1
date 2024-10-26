@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./componet/navbar";
-import Heder from "./componet/Heder";
+//import Heder from "./componet/Heder";
 import CustomCarousel from "./componet/carosel";
 import AboutUs from "./componet/abaut";
 import StatsSection from "./componet/StatsSection.jsx";
@@ -62,9 +62,7 @@ function App() {
           marginTop: "60px", // Ensure header is below the fixed navbar
           paddingBottom: 0, // Remove unnecessary padding
         }}
-      >
-        <Heder />
-      </div>
+      ></div>
       <dev className="carousel-container1">
         {/* Carousel */}
         <div
