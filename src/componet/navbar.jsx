@@ -85,7 +85,7 @@ const Navbar = () => {
   );
 
   return (
-    <header
+    <heder
       style={{
         display: "flex",
         justifyContent: "space-around",
@@ -237,7 +237,7 @@ const Navbar = () => {
       >
         {drawerList()}
       </Drawer>
-    </header>
+    </heder>
   );
 };
 
