@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./componet/navbar";
+import Navbar from "./componet/navbar.jsx";
 import Heder from "./componet/heder.jsx";
-import CustomCarousel from "./componet/carosel";
-import AboutUs from "./componet/abaut";
+import CustomCarousel from "./componet/carosel.jsx";
+import AboutUs from "./componet/abaut.jsx";
 import StatsSection from "./componet/StatsSection.jsx";
 import "./App.css";
 import Footer from "./componet/footer.jsx";
-import TestimonialsCarousel from "./componet/testimonialsCarousel";
+import TestimonialsCarousel from "./componet/testimonialsCarousel.jsx";
 import ProductCarousel from "./componet/produkslider.jsx";
 import OurFactory from "./componet/ourfactory.jsx";
 import SeertiCard from "./componet/sertifikasi.jsx";
