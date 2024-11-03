@@ -1,30 +1,28 @@
-/* Buat kontainer seluruh halaman menggunakan Flexbox */
+/* Set up the entire page layout using Flexbox */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Set tinggi minimum viewport */
+  min-height: 100vh;
   margin: 0;
 }
 
 .main-content {
-  flex: 1; /* Membuat konten utama fleksibel untuk mengisi ruang */
+  flex: 1; /* Allow the main content to flexibly fill space */
 }
 
+/* Footer Styles */
 .footer {
-  background-color: #322f2f; /* Dark background */
-  color: #ffffff; /* White text color */
+  background-color: #322f2f;
+  color: #ffffff;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 25%;
 }
 
 .footer-logo {
@@ -32,37 +30,42 @@ body {
 }
 
 .logo-image {
-  margin-top: 1%;
+  margin-top: 5%;
   width: 250px;
   margin-bottom: 8px;
+  margin-left: 10%;
 }
 
 .footer-description {
   color: #ffffff;
   font-size: 1rem;
+  margin-left: 10%;
 }
 
-.footer-links,
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
 .footer-contact,
 .footer-hours {
-  width: 20%;
+  width: 45%;
 }
 
 .footer-title {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #3ed343; /* Green accent to match the logo */
+  color: #3ed343;
 }
 
-.footer-links ul,
 .footer-contact ul,
 .footer-hours ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-links li,
 .footer-contact li,
 .footer-hours li {
   margin-bottom: 10px;
@@ -74,14 +77,14 @@ body {
 }
 
 .footer-links a:hover {
-  color: #0fca09; /* Hover effect with green color */
+  color: #0fca09;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 7%;
   width: 100%;
-  font-size: 15px;
+  font-size: 12px;
   color: #ffffff;
 }
 
@@ -101,10 +104,26 @@ body {
   }
 
   .footer-logo,
-  .footer-links,
   .footer-contact,
   .footer-hours {
     width: 100%;
+
     margin-bottom: 20px;
+  }
+
+  .footer-details {
+    flex-direction: column;
+  }
+  .logo-image {
+    margin-top: 5%;
+    width: 250px;
+    margin-bottom: 8px;
+    margin-left: -3%;
+  }
+
+  .footer-description {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-left: 1%;
   }
 }

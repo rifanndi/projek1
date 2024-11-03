@@ -1,19 +1,22 @@
 import React from "react";
 import indofonwew from "../img/indofonwew.svg";
-import product1 from "../img/product1.jpg";
-// import gambar lainnya jika dibutuhkan
-import "./ProductCarousel.css"; // Import CSS terpisah untuk styling
+import produk01 from "../img/produk01.svg";
+import produk02 from "../img/produk02.svg";
+import produk03 from "../img/produk03.svg";
+
+// Import the CSS file for styling
+import "./ProductCarousel.css";
 
 const ProductCarousel = () => {
   const products = [
-    { id: 1, name: "Ornaman PVC", image: product1 },
-    { id: 2, name: "Plafon PVC", image: product1 },
-    { id: 3, name: "List pvc", image: product1 },
+    { id: 1, name: "Ornaman PVC", image: produk01 },
+    { id: 2, name: "Plafon PVC", image: produk02 },
+    { id: 3, name: "List pvc", image: produk03 },
   ];
 
   return (
     <div className="carousel-container">
-      <h2 style={{ textAlign: "center", color: " #4caf50" }}>Produk kami</h2>
+      <h2 style={{ textAlign: "center", color: "#4caf50" }}>Produk kami</h2>
       <div className="carousel-products">
         {products.map((product) => (
           <div key={product.id} className="carousel-item">
@@ -27,11 +30,10 @@ const ProductCarousel = () => {
         ))}
       </div>
       <div>
-        {" "}
         <img
           src={indofonwew}
           className="productsepek"
-          style={{ width: "80%", marginLeft: "10%", height: "3%" }}
+          alt="Additional product"
         />
       </div>
     </div>

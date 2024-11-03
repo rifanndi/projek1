@@ -1,0 +1,13 @@
+/* src/WhatsAppLogo.css */
+.whatsapp-logo {
+  position: fixed;
+  bottom: 50px; /* Adjust the position from the bottom */
+  right: 50px; /* Adjust the position from the right */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.whatsapp-logo img {
+  width: 55px; /* Set the desired size for the logo */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}

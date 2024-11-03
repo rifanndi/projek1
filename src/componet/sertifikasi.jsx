@@ -1,89 +1,105 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-  Grid,
-} from "@mui/material";
-import "./css/sertifikat.css";
+import { Card, CardMedia, Typography } from "@mui/material";
+import Slider from "react-slick";
+import serti2 from "../img/serti2.svg";
+import serti3 from "../img/serti3.svg";
+import serti4 from "../img/serti4.svg";
+import serti5 from "../img/serti5.svg"; // Imported correctly
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function SertifikatCard() {
   const cards = [
-    {
-      title: "Sertifikasi ISO 9001: Manajemen Mutu",
-      description:
-        "Pabrik kami telah tersertifikasi ISO 9001, yang menunjukkan komitmen kami terhadap manajemen mutu dalam setiap proses produksi.",
-      img: "path/to/iso9001.jpg", // Ganti dengan path gambar yang sesuai
-    },
-    {
-      title: "Sertifikasi ISO 14001: Manajemen Lingkungan",
-      description:
-        "Dengan sertifikasi ISO 14001, kami memastikan bahwa setiap langkah produksi dijalankan dengan perhatian terhadap kelestarian lingkungan.",
-      img: "path/to/iso14001.jpg", // Ganti dengan path gambar yang sesuai
-    },
-    {
-      title: "Sertifikasi SNI: Standar Nasional Indonesia",
-      description:
-        "Produk PVC kami telah sesuai dengan standar SNI, menjamin kualitas dan keamanan untuk berbagai aplikasi industri.",
-      img: "path/to/sni.jpg", // Ganti dengan path gambar yang sesuai
-    },
-    {
-      title: "Sertifikasi RoHS: Bebas Bahan Kimia Berbahaya",
-      description:
-        "Kami mematuhi standar RoHS, memastikan produk bebas dari bahan berbahaya seperti timbal, merkuri, dan kadmium.",
-      img: "path/to/rohs.jpg", // Ganti dengan path gambar yang sesuai
-    },
+    { img: serti2 },
+    { img: serti3 },
+    { img: serti4 },
+    { img: serti5 },
   ];
 
+  // Slider settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 4, // Display 4 images at a time
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
+
   return (
-    <div style={{ padding: "20px", backgroundColor: "#333", color: "#fff" }}>
-      <Typography
-        variant="h5"
-        style={{ fontWeight: "bold", color: "green" }}
-        gutterBottom
-      >
+    <div style={styles.container}>
+      <Typography variant="h5" style={styles.title} gutterBottom>
         News Update
       </Typography>
-      <Typography variant="h6" style={{ fontWeight: "bold", color: "white" }}>
+      <Typography variant="h6" style={styles.subtitle}>
         NOW ENJOY A WONDERFUL NEWS UPDATE
       </Typography>
 
-      <Grid
-        container
-        spacing={2}
-        style={{ marginTop: "20px", marginLeft: "0.1" }}
-      >
+      <Slider {...settings} style={styles.slider}>
         {cards.map((card, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <Card sx={{ maxWidth: 345, height: "100%" }}>
+          <div key={index}>
+            <Card
+              style={{}}
+              sx={{
+                maxWidth: "100%",
+                backgroundColor: "transparent",
+                boxShadow: "none",
+              }}
+            >
               <CardMedia
                 component="img"
-                height="140"
                 image={card.img}
-                alt={card.title}
+                style={styles.cardMedia}
               />
-              <CardContent>
-                <Typography gutterBottom variant="h6" component="div">
-                  {card.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {card.description}
-                </Typography>
-              </CardContent>
-              <Button
-                size="small"
-                style={{ margin: "0 16px 16px 16px", color: "#1976d2" }}
-              >
-                LEARN MORE
-              </Button>
             </Card>
-          </Grid>
+          </div>
         ))}
-      </Grid>
+      </Slider>
     </div>
   );
 }
+
+// Inline CSS styles
+const styles = {
+  container: {
+    padding: "20px",
+    backgroundColor: "#333",
+    color: "#fff",
+    textAlign: "center",
+  },
+  title: {
+    fontWeight: "bold",
+    color: "green",
+  },
+  subtitle: {
+    fontWeight: "bold",
+    color: "white",
+  },
+  slider: {
+    marginTop: "20px",
+  },
+  cardMedia: {
+    height: "auto",
+    width: "85%",
+    objectFit: "cover",
+    marginLeft: "9%",
+    marginBottom: "10%",
+  },
+};
 
 export default SertifikatCard;

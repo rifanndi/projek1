@@ -11,109 +11,59 @@ import {
 } from "@mui/material";
 import Navbar from "../componet/navbar";
 
+// Import all images
+import plafonpvcindofon1 from "../img/plafonimg/plafonpvcindofon1.svg";
+import plafonpvcindofon2 from "../img/plafonimg/plafonpvcindofon2.svg";
+import plafonpvcindofon3 from "../img/plafonimg/plafonpvcindofon3.svg";
+import plafonpvcindofon4 from "../img/plafonimg/plafonpvcindofon4.svg";
+import plafonpvcindofon5 from "../img/plafonimg/plafonpvcindofon5.svg";
+import plafonpvcindofon6 from "../img/plafonimg/plafonpvcindofon6.svg";
+import plafonpvcindofon7 from "../img/plafonimg/plafonpvcindofon7.svg";
+import plafonpvcindofon8 from "../img/plafonimg/plafonpvcindofon8.svg";
+import plafonpvcindofon9 from "../img/plafonimg/plafonpvcindofon9.svg";
+import plafonpvcindofon10 from "../img/plafonimg/plafonpvcindofon10.svg";
+import plafonpvcindofon11 from "../img/plafonimg/plafonpvcindofon11.svg";
+import plafonpvcindofon12 from "../img/plafonimg/plafonpvcindofon12.svg";
+import plafonpvcindofon13 from "../img/plafonimg/plafonpvcindofon13.svg";
+import plafonpvcindofon14 from "../img/plafonimg/plafonpvcindofon14.svg";
+import plafonpvcindofon15 from "../img/plafonimg/plafonpvcindofon15.svg";
+import plafonpvcindofon16 from "../img/plafonimg/plafonpvcindofon16.svg";
+import plafonpvcindofon17 from "../img/plafonimg/plafonpvcindofon17.svg";
+import plafonpvcindofon18 from "../img/plafonimg/plafonpvcindofon18.svg";
+import plafonpvcindofon19 from "../img/plafonimg/plafonpvcindofon19.svg";
+import plafonpvcindofon20 from "../img/plafonimg/plafonpvcindofon20.svg";
+
+// Array of images to assign each to a product
+const productImages = [
+  plafonpvcindofon1,
+  plafonpvcindofon2,
+  plafonpvcindofon3,
+  plafonpvcindofon4,
+  plafonpvcindofon5,
+  plafonpvcindofon6,
+  plafonpvcindofon7,
+  plafonpvcindofon8,
+  plafonpvcindofon9,
+  plafonpvcindofon10,
+  plafonpvcindofon11,
+  plafonpvcindofon12,
+  plafonpvcindofon13,
+  plafonpvcindofon14,
+  plafonpvcindofon15,
+  plafonpvcindofon16,
+  plafonpvcindofon17,
+  plafonpvcindofon18,
+  plafonpvcindofon19,
+  plafonpvcindofon20,
+];
+
 const ProductPagePlavonpvc = () => {
-  const products = [
-    {
-      image: "https://via.placeholder.com/150?text=Produk+1",
-      name: "Produk 1",
-      price: "Rp10000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+2",
-      name: "Produk 2",
-      price: "Rp20000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+3",
-      name: "Produk 3",
-      price: "Rp30000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+4",
-      name: "Produk 4",
-      price: "Rp40000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+5",
-      name: "Produk 5",
-      price: "Rp50000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+6",
-      name: "Produk 6",
-      price: "Rp60000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+7",
-      name: "Produk 7",
-      price: "Rp70000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+8",
-      name: "Produk 8",
-      price: "Rp80000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+9",
-      name: "Produk 9",
-      price: "Rp90000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+10",
-      name: "Produk 10",
-      price: "Rp100000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+11",
-      name: "Produk 11",
-      price: "Rp110000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+12",
-      name: "Produk 12",
-      price: "Rp120000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+13",
-      name: "Produk 13",
-      price: "Rp130000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+14",
-      name: "Produk 14",
-      price: "Rp140000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+15",
-      name: "Produk 15",
-      price: "Rp150000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+16",
-      name: "Produk 16",
-      price: "Rp160000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+17",
-      name: "Produk 17",
-      price: "Rp170000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+18",
-      name: "Produk 18",
-      price: "Rp180000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+19",
-      name: "Produk 19",
-      price: "Rp190000",
-    },
-    {
-      image: "https://via.placeholder.com/150?text=Produk+20",
-      name: "Produk 20",
-      price: "Rp200000",
-    },
-  ];
+  // Generate an array with 40 products using images in sequence
+  const products = Array.from({ length: 40 }, (_, index) => ({
+    image: productImages[index % productImages.length], // Cycle through the images
+    name: `Produk ${index + 1}`,
+    price: `Rp${10000 * (index + 1)}`,
+  }));
 
   const articles = [
     {
@@ -121,21 +71,7 @@ const ProductPagePlavonpvc = () => {
       title: "Artikel 1",
       description: "Deskripsi singkat artikel 1.",
     },
-    {
-      image: "https://via.placeholder.com/150",
-      title: "Artikel 2",
-      description: "Deskripsi singkat artikel 2.",
-    },
-    {
-      image: "https://via.placeholder.com/150",
-      title: "Artikel 3",
-      description: "Deskripsi singkat artikel 3.",
-    },
-    {
-      image: "https://via.placeholder.com/150",
-      title: "Artikel 4",
-      description: "Deskripsi singkat artikel 4.",
-    },
+    // ... add other articles
   ];
 
   return (
@@ -155,7 +91,7 @@ const ProductPagePlavonpvc = () => {
         }}
       >
         <Typography variant="h5" fontWeight="bold" color="white" gutterBottom>
-          product
+          Product
         </Typography>
         <Typography variant="h6" color="grey.300">
           INDOFON
@@ -171,31 +107,29 @@ const ProductPagePlavonpvc = () => {
         <Button variant="contained" color="white" sx={{ mt: 2 }}></Button>
       </Box>
 
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Grid container spacing={2}>
-            {products.map((product, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
-                <Card sx={{ borderRadius: "12px", boxShadow: 3 }}>
-                  <CardMedia
-                    component="img"
-                    height="150"
-                    image={product.image}
-                    alt={product.name}
-                  />
-                  <CardContent>
-                    <Typography variant="h6" fontWeight="bold">
-                      {product.name}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="bold" color="primary">
-                      {/* {product.price} */}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
+      <Grid container spacing={2}>
+        {products.map((product, index) => (
+          <Grid item xs={12} sm={6} md={4} lg={2.4} key={index}>
+            <Card sx={{ borderRadius: "12px", boxShadow: 3 }}>
+              <CardMedia
+                component="img"
+                sx={{ width: "100%", height: "auto" }}
+                image={product.image}
+                alt={product.name}
+              />
+              <CardContent>
+                <Typography variant="h6" fontWeight="bold">
+                  {product.name}
+                </Typography>
+                <Typography
+                  variant="h5"
+                  fontWeight="bold"
+                  color="primary"
+                ></Typography>
+              </CardContent>
+            </Card>
           </Grid>
-        </Grid>
+        ))}
       </Grid>
 
       <Box sx={{ display: "flex", justifyContent: "center", mt: 5 }}>
@@ -220,7 +154,7 @@ const ProductPagePlavonpvc = () => {
               <Card sx={{ borderRadius: "12px", boxShadow: 3 }}>
                 <CardMedia
                   component="img"
-                  height="150"
+                  sx={{ width: "100%", height: "auto" }}
                   image={article.image}
                   alt={article.title}
                 />
