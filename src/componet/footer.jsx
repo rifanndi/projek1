@@ -1,21 +1,22 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../img/logo.png";
+import logo1 from "../img/Iogo1.svg";
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
           <img
-            src={logo}
+            src={logo1}
             alt="Indofon Logo"
             className="logo-image"
             style={{}}
           />
           <p className="footer-description">
-            Kami produsen plafon pvc dan juga melayani jasa pasang pvc untuk
-            seluruh wilayah di Indonesia. Kami memiliki kantor cabang distribusi
-            resmi di 34 provinsi, di seluruh Indonesia.
+            Kami produsen plafon pvc dan juga melayani jasa <br /> pasang pvc
+            untuk seluruh wilayah di Indonesia.
+            <br /> Kami memiliki kantor cabang distribusi <br /> resmi di 34
+            provinsi, di seluruh Indonesia.
           </p>
         </div>
 

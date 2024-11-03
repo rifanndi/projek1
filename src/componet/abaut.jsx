@@ -68,7 +68,7 @@ const AboutUs = () => {
             fontSize: "1rem",
             lineHeight: "1.6",
 
-            textAlign: "",
+            textAlign: "center",
             marginBlock: "10px",
 
             paddingLeft: "3%",

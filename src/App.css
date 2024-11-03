@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 30%;
+  padding-top: 100px;
 }
 .ProductCarousel-container {
   display: flex; /* Menggunakan flexbox untuk memusatkan elemen */

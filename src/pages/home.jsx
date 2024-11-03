@@ -69,7 +69,7 @@ function Home() {
         {/* Carousel */}
         <div
           style={{
-            marginTop: "", // Adjust margin to have small space between header and carousel
+            marginTop: "42.9%", // Adjust margin to have small space between header and carousel
             justifyContent: "center", // Center carousel if needed
             alignItems: "center", // Center carousel vertically if needed
             width: "100%", // Ensure full width for the carousel

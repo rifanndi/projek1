@@ -6,6 +6,13 @@
   align-items: center;
   width: 100%;
 }
+
+.carousel-container1 {
+  width: 100%;
+
+  margin-top: 0px;
+}
+
 .ProductCarousel-container {
   display: flex; /* Menggunakan flexbox untuk memusatkan elemen */
   justify-content: center; /* Memusatkan elemen secara horizontal */
@@ -21,7 +28,6 @@
 @media (max-width: 1280px) {
   .carousel-container1 {
     width: 100%;
-    margin-top: 3%;
   }
 }
 

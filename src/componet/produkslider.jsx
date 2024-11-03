@@ -6,9 +6,9 @@ import "./ProductCarousel.css"; // Import CSS terpisah untuk styling
 
 const ProductCarousel = () => {
   const products = [
-    { id: 1, name: "Produk 1", image: product1 },
-    { id: 2, name: "Produk 2", image: product1 },
-    { id: 3, name: "Produk 3", image: product1 },
+    { id: 1, name: "Ornaman PVC", image: product1 },
+    { id: 2, name: "Plafon PVC", image: product1 },
+    { id: 3, name: "List pvc", image: product1 },
   ];
 
   return (

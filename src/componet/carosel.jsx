@@ -31,8 +31,8 @@ const CustomCarousel = () => {
       sx={{
         width: isMobile ? "100%" : "80%", // Responsif lebar untuk mobile
         margin: "0 auto",
-        marginTop: "40%",
-        minHeight: "10vh",
+        marginTop: "3%",
+        minHeight: "1vh",
       }}
     >
       <Carousel
@@ -49,6 +49,7 @@ const CustomCarousel = () => {
             key={index}
             sx={{
               padding: isMobile ? "20px" : "50px", // Padding responsif
+              marginBottom: "30px",
               textAlign: "center", // Teks di tengah
               backgroundColor: "rgba(255, 255, 255, 0.8)", // Background transparan
               borderRadius: "10px", // Rounded corners
